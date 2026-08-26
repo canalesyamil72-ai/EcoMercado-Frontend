@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Surco - Iniciar Sesión</title>
+    <!-- Enlace a los estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="image/delsurcoIcono.ico">
+</head>
+<body>
+
+    <!-- Contenedor principal de la vista de login -->
+    <main class="login-wrapper">
+        <div class="login-container">
+            
+            <!-- Panel izquierdo: Bloque visual con el logo -->
+            <div class="login-left-panel">
+                <div class="logo-circle">
+                    <!-- PUNTO DE INTEGRACIÓN: Colocar aquí la imagen del logo -->
+                    <img src="image/Logo.png" alt="Del Surco Logo">
+                </div>
+            </div>
+
+            <!-- Panel derecho: Formulario de inicio de sesión -->
+            <div class="login-right-panel">
+                <div class="login-card">
+                    
+                    <h2 class="login-title">BIENVENIDO AL DEL SURCO</h2>
+                    <p class="login-subtitle">Bienvenido de vuelta al Del Surco.</p>
+
+                    <!-- PUNTO DE INTEGRACIÓN: Formulario para conectar la API de Login (POST /api/Usuario/login) -->
+                    <form id="loginForm">
+                        
+                        <!-- Campo Correo -->
+                       <!-- Campo Correo -->
+                        <div class="form-group">
+                            <label for="email">Correo</label>
+                            <input type="email" id="email" placeholder="ejemplo@mail.com" required>
+                        </div>
+                        <!-- Campo Contraseña -->
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" placeholder="•••••" required>
+                        </div>
+
+                        <!-- Opciones adicionales -->
+                        <div class="form-options">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="rememberMe">
+                                <label for="rememberMe">Recordar siempre</label>
+                            </div>
+                            <!-- PUNTO DE INTEGRACIÓN: Enlace para recuperar contraseña -->
+                            <a href="#" id="forgotPasswordLink">¿Olvidaste la contraseña?</a>
+                        </div>
+
+                        <!-- Botón de Registrarse (para procesar el formulario de registro/creación) -->
+                        <!-- PUNTO DE INTEGRACIÓN: Evento submit para registro o acción de cuenta -->
+                        <button type="submit" class="btn-primary-custom">Registrarse</button>
+
+                        <!-- Botón Entrar como invitado -->
+                        <!-- PUNTO DE INTEGRACIÓN: Redireccionar al marketplace público sin token -->
+                        <button type="button" id="btnGuest" class="btn-outline-custom">Entrar como invitado</button>
+
+                        <!-- Enlace a Registro -->
+                        <div class="register-redirect">
+                            <span>¿No tienes una cuenta? </span>
+                            <!-- PUNTO DE INTEGRACIÓN: Redireccionar a la vista de registro -->
+                            <a href="html/registro.html">Crea una cuenta</a>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
