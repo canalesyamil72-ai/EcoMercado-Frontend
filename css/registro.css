@@ -1,0 +1,332 @@
+/* ==========================================
+   TIPOGRAFÍA NATIVA DEL SISTEMA
+   ========================================== */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+/* ==========================================
+   ESTILOS PARA LA VISTA DE REGISTRO Y ROLES
+   ========================================== */
+
+.register-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FAF6ED;
+}
+
+/* Vista 1: Selección de Rol */
+.role-selection-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px; 
+    box-sizing: border-box; 
+}
+
+.top-logo-container {
+    width: 70px;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.top-logo-container img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.role-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.role-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2D5A27;
+    margin-bottom: 10px;
+}
+
+.role-header p {
+    font-size: 14px;
+    color: #6C757D;
+}
+
+.role-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.role-card {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    min-width: 260px; 
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+.role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.role-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.role-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.role-icon {
+    font-size: 22px;
+}
+
+
+/* Vista 2: Formulario de Registro de Comprador (Dos columnas similar al login) */
+.buyer-form-section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.buyer-form-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.buyer-left-panel {
+    width: 45%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #A85324 0%, #D8A47F 60%, #FAF6ED 100%);
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.buyer-left-panel .logo-circle {
+    width: 90px;
+    height: 90px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.buyer-left-panel .logo-circle img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.buyer-left-text h2 {
+    font-size: 32px;
+    color: #2D5A27;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.buyer-left-text p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.buyer-right-panel {
+    width: 55%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAF6ED;
+    padding: 40px 20px;
+}
+
+.buyer-right-panel .register-card {
+    width: 100%;
+    max-width: 550px;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.buyer-right-panel h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D5A27;
+    margin-bottom: 5px;
+}
+
+/* Distribución de campos en filas de 2 columnas */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.buyer-right-panel select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    outline: none;
+    background-color: #F8FAFC;
+    color: #333333;
+}
+
+.buyer-right-panel select:focus {
+    border-color: #2D5A27;
+    background-color: #FFFFFF;
+}
+
+/* Caja para subir archivos */
+.file-upload-box {
+    border: 2px dashed #CBD5E1;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #F8FAFC;
+    position: relative;
+    cursor: pointer;
+}
+
+.file-upload-box span {
+    display: block;
+    font-size: 13px;
+    color: #2D5A27;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.file-upload-box small {
+    font-size: 11px;
+    color: #6C757D;
+}
+
+.file-upload-box input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.terms-group {
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+.terms-group a {
+    color: #2D5A27;
+    text-decoration: underline;
+}
+
+.role-icon-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   DISEÑO RESPONSIVE (MÓVILES Y TABLETS)
+   ========================================== */
+@media (max-width: 768px) {
+    .role-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .role-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: unset;
+        height: 240px;
+    }
+}
+    /* Vista 2: Formulario de comprador en columna (Panel izquierdo pasa arriba o se oculta) */
+    .buyer-form-container {
+        flex-direction: column;
+    }
+
+    .buyer-left-panel {
+        width: 100%;
+        min-height: auto;
+        padding: 30px 20px;
+        border-radius: 0;
+    }
+
+    .buyer-right-panel {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .buyer-right-panel .register-card {
+        max-width: 100%;
+        padding: 25px 20px;
+    }
+
+    /* Campos del formulario en una sola columna en móviles */
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+
+
+    

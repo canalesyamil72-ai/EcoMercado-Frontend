@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Comprador - Del Surco</title>
+    <link rel="stylesheet" href="../css/registro-comprador.css">
+</head>
+
+<body>
+
+    <div class="register-wrapper">
+        <section class="buyer-form-section" style="display: block;">
+            <div class="buyer-form-container">
+
+                <!-- Panel Izquierdo (Branding) -->
+                <div class="buyer-left-panel">
+                    <div class="logo-circle">
+                        <img src="../image/soloLogo.png" alt="Logo">
+                    </div>
+                    <div class="buyer-left-text">
+                        <h2>Cosecha lo mejor para tu tierra.</h2>
+                        <p>Únete a la red exclusiva de Del Surco. Accede a los mejores insumos agrícolas y herramientas
+                            de agronomía moderna en un solo lugar.</p>
+                    </div>
+                </div>
+
+                <!-- Panel Derecho (Formulario) -->
+                <div class="buyer-right-panel">
+                    <div class="register-card">
+                        <!-- Botón de Volver estético -->
+                        <a href="registro.html" class="btn-back-custom">← Volver</a>
+                        <h2>Registro de Comprador</h2>
+                        <p class="form-subtitle">Completa tus datos para empezar a comprar.</p>
+
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombreCompleto">Nombre completo</label>
+                                    <input type="text" id="nombreCompleto" placeholder="Ej. Juan Pérez" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailComprador">Email</label>
+                                    <input type="email" id="emailComprador" placeholder="correo@ejemplo.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" id="password" placeholder="••••••••" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirmar contraseña</label>
+                                    <input type="password" id="confirmPassword" placeholder="••••••••" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="telefono" placeholder="+505 0000-0000" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="departamento">Departamento</label>
+                                    <input type="text" id="departamento" placeholder="Carazo" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="municipio">Municipio</label>
+                                    <input type="text" id="municipio" placeholder="Jinotepe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="preguntaSecreta">Pregunta secreta</label>
+                                    <select id="preguntaSecreta" required>
+                                        <option value="" disabled selected>Cargando preguntas...</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="respuestaSecreta">Respuesta secreta</label>
+                                <input type="text" id="respuestaSecreta" placeholder="Tu respuesta" required>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="fotoPerfil">Foto de perfil (Opcional)</label>
+                                <div class="file-upload-box">
+                                    <span>Subir foto o arrastra y suelta</span>
+                                    <small>PNG, JPG hasta 5MB</small>
+                                    <input type="file" id="fotoPerfil" accept="image/png, image/jpeg">
+                                </div>
+                            </div>
+
+                            <div class="terms-group">
+                                <input type="checkbox" id="terms" required>
+                                <label for="terms">Acepto los <a href="#">Términos de Servicio</a> y la <a
+                                        href="#">Política de Privacidad</a>.</label>
+                            </div>
+
+                            <button type="submit" class="btn-primary-custom">Registrarse</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
