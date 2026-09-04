@@ -12,6 +12,7 @@
 <body>
 
     <div class="register-wrapper">
+        <a href="../index.html" class="btn-back-custom">← Volver</a>
         
         <!-- VISTA 1: Selección de Tipo de Usuario (Comprador / Vendedor) -->
         <section id="roleSelectionView" class="role-selection-section">
@@ -27,123 +28,22 @@
 
             <div class="role-cards-container">
                 <!-- Tarjeta Vendedor -->
-                <div class="role-card" id="cardVendedor">
+                <a href="registro-vendedor.html" class="role-card" id="cardVendedor">
                     <img src="../image/Vendedor.jpeg" alt="Entrar como Vendedor" class="role-bg-img">
                     <div class="role-card-overlay">
                         <img src="../icon/tienda.png" alt="Icono Vendedor" class="role-icon-img">
                         <span>Entrar como Vendedor</span>
                     </div>
-                </div>
+                </a>
 
                 <!-- Tarjeta Comprador -->
-                <div class="role-card" id="cardComprador">
+                <a href="registro-comprador.html" class="role-card" id="cardComprador">
                     <img src="../image/Comprador.jpeg" alt="Entrar como Comprador" class="role-bg-img">
                     <div class="role-card-overlay">
                         <img src="../icon/canasta.png" alt="Icono Comprador" class="role-icon-img">
                         <span>Entrar como Comprador</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- VISTA 2: Formulario de Registro de Comprador -->
-        <section id="buyerFormView" class="buyer-form-section" style="display: none;">
-            <div class="buyer-form-container">
-                
-                <!-- Panel izquierdo decorativo -->
-                <div class="buyer-left-panel">
-                    <div class="logo-circle">
-                        <img src="../image/tu-logo.png" alt="Del Surco Logo">
-                    </div>
-                    <div class="buyer-left-text">
-                        <h2>Cosecha lo mejor para tu tierra.</h2>
-                        <p>Únete a la red exclusiva de Del Surco. Accede a los mejores insumos agrícolas y herramientas de agronomía moderna en un solo lugar.</p>
-                    </div>
-                </div>
-
-                <!-- Panel derecho con el formulario -->
-                <div class="buyer-right-panel">
-                    <div class="register-card">
-                        <h2>Registro de Comprador</h2>
-                        <p class="form-subtitle">Completa tus datos para empezar a comprar.</p>
-
-                        <!-- PUNTO DE INTEGRACIÓN BACKEND: POST /api/Usuario/registrar ("rol": "Consumidor") -->
-                        <form id="formRegistroComprador">
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="nombreCompleto">Nombre completo</label>
-                                    <input type="text" id="nombreCompleto" placeholder="Ej. Juan Pérez" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="emailComprador">Email</label>
-                                    <input type="email" id="emailComprador" placeholder="correo@ejemplo.com" required>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="password">Contraseña</label>
-                                    <input type="password" id="password" placeholder="••••••••" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="confirmPassword">Confirmar contraseña</label>
-                                    <input type="password" id="confirmPassword" placeholder="••••••••" required>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="telefono">Teléfono</label>
-                                    <input type="tel" id="telefono" placeholder="+505 0000-0000" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="departamento">Departamento</label>
-                                    <input type="text" id="departamento" placeholder="Carazo" required>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="municipio">Municipio</label>
-                                    <input type="text" id="municipio" placeholder="Jinotepe" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="preguntaSecreta">Pregunta secreta</label>
-                                    <select id="preguntaSecreta" required>
-                                        <option value="" disabled selected>Selecciona una pregunta...</option>
-                                        <option value="1">¿Cuál es el nombre de tu primera mascota?</option>
-                                        <option value="2">¿En qué ciudad naciste?</option>
-                                        <option value="3">¿Cuál es tu comida favorita?</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group full-width">
-                                <label for="respuestaSecreta">Respuesta secreta</label>
-                                <input type="text" id="respuestaSecreta" placeholder="Tu respuesta" required>
-                            </div>
-
-                            <div class="form-group full-width">
-                                <label for="fotoPerfil">Foto de perfil (Opcional)</label>
-                                <div class="file-upload-box">
-                                    <span>📁 Subir foto o arrastra y suelta</span>
-                                    <small>PNG, JPG hasta 5MB</small>
-                                    <input type="file" id="fotoPerfil" accept="image/png, image/jpeg">
-                                </div>
-                            </div>
-
-                            <div class="checkbox-group terms-group">
-                                <input type="checkbox" id="terms" required>
-                                <label for="terms">Acepto los <a href="#">Términos de Servicio</a> y la <a href="#">Política de Privacidad</a>.</label>
-                            </div>
-
-                            <button type="submit" class="btn-primary-custom">Registrarse</button>
-                        </form>
-                    </div>
-                </div>
-
+                </a>
             </div>
         </section>
 

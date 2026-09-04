@@ -1,0 +1,299 @@
+/* ==========================================
+   ESTILOS PARA EL FORMULARIO DE VENDEDOR
+   ========================================== */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF6ED;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.buyer-form-section {
+    width: 100%;
+}
+
+.buyer-form-container {
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.buyer-left-panel {
+    width: 45%;
+    background: linear-gradient(180deg, #A85324 0%, #D8A47F 60%, #FAF6ED 100%);
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.buyer-left-panel .logo-circle {
+    width: 90px;
+    height: 90px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.buyer-left-panel .logo-circle img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.buyer-left-text h2 {
+    font-size: 32px;
+    color: #2D5A27;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.buyer-left-text p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.buyer-right-panel {
+    width: 55%;
+    padding: 40px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buyer-right-panel .register-card {
+    width: 100%;
+    max-width: 550px;
+}
+
+.buyer-right-panel h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D5A27;
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    font-size: 14px;
+    color: #6C757D;
+    margin-bottom: 25px;
+}
+
+.btn-back-custom {
+    background: none;
+    border: none;
+    color: #2D5A27;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-back-custom:hover {
+    text-decoration: underline;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2D5A27;
+    margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.buyer-right-panel select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    outline: none;
+    background-color: #F8FAFC;
+    color: #333333;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.form-group input:focus,
+.buyer-right-panel select:focus {
+    border-color: #2D5A27;
+    background-color: #FFFFFF;
+}
+
+.file-upload-box {
+    border: 2px dashed #CBD5E1;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #F8FAFC;
+    position: relative;
+    cursor: pointer;
+}
+
+.file-upload-box input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload-box span {
+    display: block;
+    font-size: 13px;
+    color: #2D5A27;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.file-upload-box small {
+    font-size: 11px;
+    color: #6C757D;
+}
+
+.terms-group {
+    margin: 20px 0;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333333;
+}
+
+.terms-group a {
+    color: #2D5A27;
+    text-decoration: underline;
+}
+
+.btn-primary-custom {
+    width: 100%;
+    padding: 14px;
+    background-color: #2D5A27;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary-custom:hover {
+    background-color: #23481f;
+}
+
+@media (max-width: 900px) {
+    .buyer-form-container {
+        flex-direction: column;
+    }
+
+    .buyer-left-panel {
+        width: 100%;
+        padding: 40px 30px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .buyer-right-panel {
+        width: 100%;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .register-wrapper {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .buyer-form-container {
+        flex-direction: column;
+    }
+
+    .buyer-left-panel {
+        width: 100%;
+        padding: 40px 30px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .buyer-right-panel {
+        width: 100%;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .register-wrapper {
+        padding: 10px;
+    }
+}
